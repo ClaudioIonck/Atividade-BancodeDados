@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de alunos</title>
+</head>
+<body>
+<form action="gravar.php" method="post">
+    <div>
+        NOME:
+        <input type="text" id="nome" name="nome">
+        <br>
+        <br>
+        PESO:
+        <input type="text" id="peso" name="peso">
+        <br>
+        <br>
+        ALTURA:
+        <input type="text" id="altura" name="altura">
+        <input type="submit" value="GRAVAR" onmousemove="Trocar();" >
+    </div>
+</form>
+<br><br>
+
+<!-- vamos inserir a tabela.php-->
+
+<?php
+    include("tabela.php");
+?>
+
+<script>
+    function Trocar() {
+        var texto = altura.value;
+        altura.value = texto.replace(",", ".")
+
+        if(nome.value=="") {
+            alert("Preencha o nome!")
+        }
+        if (peso.value=="") {
+            alert("Preencha o peso!")
+        }
+        if (altura.value=="") {
+            alert("Preencha a altura!")
+        }
+    }
+</script>
+
+</body>
+</html>

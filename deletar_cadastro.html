@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de alunos</title>
+</head>
+<body>
+<form action="deletar.php" method="post">
+    <div>
+        CODIGO:
+        <input type="text" id="codigo" name="codigo" size=3>
+
+        <input type="submit" value="DELETAR" onmousemove="Validar();" >
+    </div>
+</form>
+
+<script>
+    function Validar() {
+
+        if(codigo.value=="") {
+            alert("Preencha o CODIGO a ser DELETADO!")
+        }
+        
+    }
+</script>
+
+</body>
+</html>
