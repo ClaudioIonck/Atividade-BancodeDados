@@ -17,6 +17,29 @@
         <br>
         ALTURA:
         <input type="text" id="altura" name="altura">
+        <br>
+        <br>
+        <!--aula 28/10-->
+        ENDERECO:
+        <input type="text" id="endereco" name="endereco">
+        <br>
+        <br>
+        NUMERO:
+        <input type="text" id="numero" name="numero">
+        <br>
+        <br>
+        BAIRRO:
+        <input type="text" id="bairro" name="bairro">
+        <br>
+        <br>
+        CIDADE:
+        <input type="text" id="cidade" name="cidade">
+        <br>
+        <br>
+        CEP:
+        <input type="text" id="cep" name="cep">
+        <br>
+        <br>
         <input type="submit" value="GRAVAR" onmousemove="Trocar();" >
     </div>
 </form>

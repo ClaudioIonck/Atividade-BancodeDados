@@ -24,7 +24,13 @@
         <td> Código </td> 
         <td> Nome   </td> 
         <td> Peso   </td> 
-        <td> Altura </td>  
+        <td> Altura </td>
+        <!--aula 28/10-->
+        <td> Endereço </td> 
+        <td> Numero   </td> 
+        <td> Bairro   </td> 
+        <td> Cidade   </td>
+        <td> cep      </td>   
 
     </tr> 
 
@@ -44,12 +50,18 @@
         $nome   =   $coluna["nome"];
         $peso   =   $coluna["peso"];
         $altura =   $coluna["altura"];
+        // mudanças aula 28/10
+        $endereco = $coluna["endereco"];
+        $numero = $coluna["numero"];
+        $bairro = $coluna["bairro"];
+        $cidade = $coluna["cidade"];
+        $cep = $coluna["cep"];
         $L++;
         if($L%2==0)  // Verificando se o resto da divisão por 2 é ZERO
         {
-            echo("<tr class='linha_par'><td>$codigo</td><td>$nome</td><td>$peso</td><td>$altura</td></tr>");
+            echo("<tr class='linha_par'><td>$codigo</td><td>$nome</td><td>$peso</td><td>$altura</td><td>$endereco</td><td>$numero</td><td>$bairro</td><td>$cidade</td><td>$cep</td></tr>");
         }else{
-            echo("<tr class='linha_impar'><td>$codigo</td><td>$nome</td><td>$peso</td><td>$altura</td></tr>");
+            echo("<tr class='linha_impar'><td>$codigo</td><td>$nome</td><td>$peso</td><td>$altura</td><td>$endereco</td><td>$numero</td><td>$bairro</td><td>$cidade</td><td>$cep</td></tr>");
         }
     }
 ?>
