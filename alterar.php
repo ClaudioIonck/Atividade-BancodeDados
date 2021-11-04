@@ -8,11 +8,11 @@
     $a = $_POST["altura"];
 
     // aula 28/10
-    $b = $_POST["endereco"];
-    $d = $_POST["numero"];
-    $m = $_POST["bairro"];
-    $l = $_POST["cidade"];
-    $o = $_POST["cep"];
+    $endereco = $_POST["endereco"];
+    $numero = $_POST["numero"];
+    $bairro = $_POST["bairro"];
+    $cidade = $_POST["cidade"];
+    $cep = $_POST["cep"];
 
     $result = $pdo->prepare("UPDATE alunos SET nome=:nome, peso=:peso, altura=:altura, endereco=:endereco, numero=:numero, bairro=:bairro, cidade=:cidade, cep=:cep WHERE cod=:codigo");
 
@@ -22,11 +22,11 @@
     $result->bindValue(":codigo", $c);
 
     // aula 28/10
-    $result->bindValue(":endereco", $b);
-    $result->bindValue(":numero", $d);
-    $result->bindValue(":bairro", $m);
-    $result->bindValue(":cidade", $l);
-    $result->bindValue(":cep", $o);
+    $result->bindValue(":endereco", $endereco);
+    $result->bindValue(":numero", $numero);
+    $result->bindValue(":bairro", $bairro);
+    $result->bindValue(":cidade", $cidade);
+    $result->bindValue(":cep", $cep);
     $result->execute();
     
 
